@@ -1,0 +1,429 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20% auto;
+
+}
+
+.about-text {
+    max-width: 60%;
+    margin: 0 5%;
+
+}
+
+.about__img {
+    max-width: 200px;
+}
+
+
+.section__title {
+    min-width: 20%;
+    margin: 0 5%;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: 15px;
+}
+
+.section__subtitle--intro {
+    background-color: teal;
+    padding: .25em 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1em;
+
+}
+
+.section__subtitle--about-me {
+    background-color: teal;
+    padding: .25em 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1em;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.nav {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform:translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: teal;
+
+}
+
+.nav-toggle {
+    padding: .25em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+
+}
+
+.nav-open,
+.nav {
+    transform: translateX(100%);
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+    opacity: 0;
+
+}
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background-color: teal;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before {
+    top: 6px
+}
+
+.hamburger::after {
+    bottom: 6px;
+}
+
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.intro {
+    position: relative;
+}
+
+.intro__img {
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25);
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20% auto;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: right;
+    height: 100vh;
+    margin: 0;
+}
+
+.portfolio a {
+    margin: 10px;
+}
+
+.image-1 {
+    background-image: url('img/ea-portfolio.png');
+    width: 600px;
+    height: 300px;
+    background-position: top;
+    background-size: cover;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.image-1 h4 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: crimson;
+    color: black;
+}
+
+
+
+.image-2 {
+    background-image: url('img/horiseon-refractor.jpg');
+    width: 500px;
+    height:200px;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.image-2 h4 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: teal;
+    color: black;
+}
+
+.image-3 {
+    background-image: url('img/passwordgen.png');
+    width: 500px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+
+}
+
+.image-3 h4 {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 2px;
+    background-color: darkslateblue;
+    color: black;
+}
+
+.image-4{
+    background-image: url('img/eablank3.jpeg');
+    width: 500px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.image-4 h4{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: olivedrab;
+    color: black;
+}
+
+.image-5{
+    background-image: url('img/eablank3.jpeg');
+    width: 500px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.image-5 h4{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: plum;
+    color: black;
+}
+
+.image-6{
+    background-image: url('img/weatherapp.png');
+    width: 500px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.image-6 h4{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: yellow;
+    color: black;
+}
+
+.image-7{
+    background-image: url('img/eablank3.jpeg');
+    width: 500px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.image-7 h4{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: cyan;
+    color: black;
+}
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100%+1.5em);
+    }
+
+    .footer{
+        background: teal;
+        color: black;
+        text-align: center;
+        padding: 2.5em;
+        font-size: medium;
+    }
+
+    .footer a {color: inherit;}
+
+    .footer__link{
+        font-weight: bold;
+    }
+
+    .footer__link:hover,
+    .social-media__link:hover{
+        opacity: .7;
+    }
+
+    .footer__link:hover{
+        text-decoration: underline;
+    }
+
+    .social-media{
+        list-style: none;
+        display: flex;
+        justify-content: middle;
+        margin: 2em 0 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .social-media__item{
+        margin:0 .5em;
+    }
+
+    .social-media__link{
+        padding: 5em;
+    }
+}
