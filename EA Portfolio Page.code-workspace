@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "EA Portfolio Page",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EA Portfolio Page"
+	}
+}
