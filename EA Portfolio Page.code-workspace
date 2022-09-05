@@ -1,11 +1,12 @@
 {
-	"folders": [
-		{
-			"name": "EA Portfolio Page",
-			"path": "."
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "EA Portfolio Page"
-	}
+    "folders": [
+        {
+            "name": "assets",
+            "path": "assets"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "assets",
+        "liveServer.settings.port": 5501
+    }
 }
