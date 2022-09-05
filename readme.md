@@ -1,5 +1,15 @@
-Desription of My Module 2 Challenge (Create Portfolio Website):
+Emilianos-Portfolio-Page2 
 
-First, I used flexboxes and added fonts to my website. I added a navigation button. I also added placeholder images for my projects. I also added multiple links.
+Created a Portfolio Page that contains a Navbar button and when clicked a menu 
+will slide out and multiple options will pop out.
 
-<img width="1440" alt="Screen Shot 2022-05-21 at 10 41 36 AM" src="https://user-images.githubusercontent.com/103615246/169925762-116716a3-496c-4675-8f90-caae365654b5.png">
+Added JavaScript to Button Elements.
+
+Added Images with descriptive Alt Tags.
+
+Added Project Images.
+
+When Hovered Upon Images in the "My Work" Tab image will hover.
+
+
+<img width="1293" alt="Screen Shot 2022-09-05 at 3 57 09 PM" src="https://user-images.githubusercontent.com/103615246/188521110-7461cdd3-2179-4363-b09e-8de0cc80e9e4.png">
